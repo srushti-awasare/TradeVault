@@ -1,0 +1,201 @@
+/* ================================
+   PRICING PAGE
+================================ */
+
+.pricing-page {
+  margin-bottom: 3rem;
+}
+
+.pricing-hero {
+  padding: 3rem 1.5rem;
+  margin-top: 3rem;
+}
+
+.pricing-hero h1 {
+  font-size: 2.5rem;
+}
+
+.pricing-hero h3 {
+  line-height: 1.6;
+}
+
+/* ================================
+   PRICING CARDS
+================================ */
+
+.pricing-cards {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.pricing-card {
+  padding: 2rem;
+}
+
+.pricing-card img {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card h2 {
+  margin-bottom: 1rem;
+}
+
+.pricing-card p {
+  line-height: 1.8;
+}
+
+/* ================================
+   BROKERAGE
+================================ */
+
+.pricing-brokerage {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.brokerage-info,
+.brokerage-charges {
+  padding: 2rem;
+}
+
+.pricing-link {
+  text-decoration: none;
+  color: #387ed1;
+}
+
+.pricing-link:hover {
+  text-decoration: underline;
+}
+
+.brokerage-list {
+  padding-left: 1.5rem;
+  text-align: left;
+  line-height: 2;
+  font-size: 0.85rem;
+}
+
+.brokerage-charges {
+  text-align: center;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 991px) {
+  .pricing-hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+  }
+
+  .pricing-card img {
+    max-width: 170px;
+  }
+
+  .brokerage-info,
+  .brokerage-charges {
+    padding: 1.5rem;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+  .pricing-hero {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .pricing-hero h1 {
+    font-size: 2rem;
+  }
+
+  .pricing-hero h3 {
+    font-size: 1rem !important;
+  }
+
+  .pricing-cards {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-card img {
+    max-width: 160px;
+    height: 120px;
+  }
+
+  .pricing-card h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .pricing-card p {
+    font-size: 0.95rem;
+  }
+
+  .pricing-brokerage {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .brokerage-info,
+  .brokerage-charges {
+    padding: 1.25rem;
+  }
+
+  .brokerage-list {
+    font-size: 0.85rem;
+    line-height: 1.8;
+    padding-left: 1.25rem;
+  }
+
+  .brokerage-charges {
+    text-align: left;
+    border-top: 1px solid #dee2e6;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .pricing-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .pricing-hero h3 {
+    font-size: 0.95rem !important;
+  }
+
+  .pricing-card {
+    padding: 1rem;
+  }
+
+  .pricing-card img {
+    max-width: 140px;
+    height: 110px;
+  }
+
+  .brokerage-info,
+  .brokerage-charges {
+    padding: 1rem;
+  }
+
+  .brokerage-list {
+    font-size: 0.8rem;
+  }
+}

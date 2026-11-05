@@ -1,0 +1,156 @@
+/* ================================
+   ABOUT PAGE
+================================ */
+
+.about-page {
+  overflow-wrap: break-word;
+}
+
+.about-heading {
+  padding: 3rem;
+}
+
+.about-heading h1 {
+  line-height: 1.6;
+}
+
+.about-content {
+  padding: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+.about-column {
+  padding: 2rem;
+}
+
+.about-link {
+  text-decoration: none;
+  color: #387ed1;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   TEAM
+================================ */
+
+.team-content {
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.team-profile {
+  padding: 1rem;
+}
+
+.team-image {
+  width: 50%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-bio {
+  padding: 1rem;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 991px) {
+  .about-heading {
+    padding: 2rem 1rem;
+  }
+
+  .about-content {
+    padding: 2rem 1rem;
+  }
+
+  .about-column {
+    padding: 1.5rem;
+  }
+
+  .team-image {
+    width: 60%;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .about-heading {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    padding: 1rem;
+  }
+
+  .about-heading h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.5;
+  }
+
+  .about-content {
+    padding: 1.5rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .about-column {
+    padding: 1rem;
+  }
+
+  .team-content {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .team-profile {
+    margin-bottom: 1.5rem;
+  }
+
+  .team-image {
+    width: 55%;
+    max-width: 250px;
+  }
+
+  .team-bio {
+    padding: 1rem;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .about-heading h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .about-content {
+    padding: 1rem 0;
+    font-size: 0.95rem;
+  }
+
+  .about-column {
+    padding: 0.75rem;
+  }
+
+  .team-image {
+    width: 65%;
+    max-width: 220px;
+  }
+
+  .team-content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}

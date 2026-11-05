@@ -1,0 +1,224 @@
+/* ================================
+   PRODUCTS PAGE
+================================ */
+
+.product-hero {
+  padding: 3rem 1rem;
+}
+
+.product-hero h1 {
+  font-size: 2.5rem;
+}
+
+.product-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.product-image {
+  text-align: center;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-details {
+  padding: 3rem;
+}
+
+.product-details h1 {
+  margin-bottom: 1.5rem;
+}
+
+.product-details p {
+  line-height: 1.8;
+  color: #6c757d;
+}
+
+.product-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.product-link,
+.product-links a {
+  text-decoration: none;
+  color: #387ed1;
+}
+
+.product-link:hover,
+.product-links a:hover {
+  text-decoration: underline;
+}
+
+.product-app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.product-app-links img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+/* ================================
+   UNIVERSE
+================================ */
+
+.product-universe {
+  margin-top: 5rem;
+}
+
+.product-universe > .text-center {
+  padding: 1rem;
+}
+
+.universe-card {
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.universe-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.universe-card p {
+  line-height: 1.7;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 991px) {
+  .product-details {
+    padding: 2rem;
+  }
+
+  .product-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .product-universe {
+    margin-top: 3rem;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+  .product-section .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-details {
+    order: 1;
+  }
+
+  .product-image {
+    order: 2;
+  }
+
+  .product-hero {
+    padding: 2rem 1rem;
+  }
+
+  .product-hero h1 {
+    font-size: 2rem;
+  }
+
+  .product-hero h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .product-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .product-image {
+    padding: 1rem;
+  }
+
+  .product-image img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .product-details {
+    padding: 1.5rem;
+  }
+
+  .product-details h1 {
+    font-size: 1.8rem;
+  }
+
+  .product-details p {
+    font-size: 1rem;
+  }
+
+  .product-app-links {
+    gap: 0.75rem;
+  }
+
+  .product-app-links img {
+    max-width: 130px;
+  }
+
+  .product-universe {
+    margin-top: 2rem;
+  }
+
+  .universe-card {
+    padding: 1rem;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .product-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .product-hero h3 {
+    font-size: 1rem !important;
+  }
+
+  .product-details {
+    padding: 1rem;
+  }
+
+  .product-details h1 {
+    font-size: 1.5rem;
+  }
+
+  .product-links {
+    gap: 1rem;
+  }
+
+  .product-app-links img {
+    max-width: 115px;
+  }
+
+  .product-universe h1 {
+    font-size: 1.6rem;
+  }
+}
