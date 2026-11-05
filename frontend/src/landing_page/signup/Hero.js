@@ -42,7 +42,8 @@ function Hero() {
           confirmButtonColor: "#387ed1",
         });
 
-        window.location.href = "http://localhost:3001/login";
+        window.location.href =
+          "https://tradevault-dashboard-jsch.onrender.com/login";
         setFormData({
           username: "",
           email: "",
@@ -111,7 +112,9 @@ function Hero() {
           </p>
           <p className="login-text">
             Already have an account?{" "}
-            <a href="http://localhost:3001/login">Login</a>
+            <a href="https://tradevault-dashboard-jsch.onrender.com/login">
+              Login
+            </a>{" "}
           </p>
         </div>
       </div>

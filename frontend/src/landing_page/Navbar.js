@@ -41,7 +41,7 @@ function Navbar() {
   }, []);
 
   const goToDashboard = (path) => {
-    window.location.href = `http://localhost:3001${path}`;
+    window.location.href = `https://tradevault-dashboard-jsch.onrender.com${path}`;
   };
 
   const handleLogout = async () => {
