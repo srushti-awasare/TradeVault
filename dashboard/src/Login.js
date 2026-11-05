@@ -7,17 +7,20 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:3002/api/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://tradevault-backend-9ehr.onrender.com/api/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+          body: JSON.stringify({
+            email,
+            password,
+          }),
         },
-        credentials: "include",
-        body: JSON.stringify({
-          email,
-          password,
-        }),
-      });
+      );
 
       const data = await response.json();
 
@@ -38,7 +41,8 @@ function Login() {
           confirmButtonColor: "#387ed1",
         });
 
-        window.location.href = "http://localhost:3001/";
+        window.location.href =
+          "https://tradevault-dashboard-jsch.onrender.com/";
       } else {
         await Swal.fire({
           icon: "error",
