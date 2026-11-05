@@ -2,7 +2,8 @@ import React from "react";
 
 const Apps = () => {
   React.useEffect(() => {
-    window.location.href = "http://localhost:3000/products";
+    window.location.href =
+      "https://tradevault-dashboard-jsch.onrender.com/products";
   }, []);
 
   return null;
