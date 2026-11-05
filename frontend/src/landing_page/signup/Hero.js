@@ -17,14 +17,17 @@ function Hero() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3002/api/auth/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://tradevault-backend-9ehr.onrender.com/api/auth/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+          body: JSON.stringify(formData),
         },
-        credentials: "include",
-        body: JSON.stringify(formData),
-      });
+      );
 
       const data = await response.json();
       if (data.success) {

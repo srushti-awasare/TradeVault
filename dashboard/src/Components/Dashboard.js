@@ -17,7 +17,7 @@ const Dashboard = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3002/api/auth/check", {
+    fetch("https://tradevault-backend-9ehr.onrender.com/api/auth/check", {
       credentials: "include",
     })
       .then((res) => {

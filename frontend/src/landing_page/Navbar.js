@@ -29,7 +29,7 @@ function Navbar() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3002/api/auth/check", {
+    fetch("https://tradevault-backend-9ehr.onrender.com/api/auth/check", {
       credentials: "include",
     })
       .then((res) => {
@@ -46,10 +46,13 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:3002/api/auth/logout", {
-        method: "POST",
-        credentials: "include",
-      });
+      await fetch(
+        "https://tradevault-backend-9ehr.onrender.com/api/auth/logout",
+        {
+          method: "POST",
+          credentials: "include",
+        },
+      );
 
       localStorage.removeItem("token");
       localStorage.removeItem("username");

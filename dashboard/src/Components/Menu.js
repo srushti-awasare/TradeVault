@@ -77,10 +77,13 @@ const Menu = () => {
     setIsLoggingOut(true);
 
     try {
-      const response = await fetch("http://localhost:3002/api/auth/logout", {
-        method: "POST",
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://tradevault-backend-9ehr.onrender.com/api/auth/logout",
+        {
+          method: "POST",
+          credentials: "include",
+        },
+      );
 
       if (!response.ok) {
         throw new Error("Logout request failed");

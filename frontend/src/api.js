@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "http://localhost:3002",
+  baseURL: "https://tradevault-backend-9ehr.onrender.com",
   withCredentials: true,
 });

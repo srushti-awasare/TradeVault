@@ -8,7 +8,7 @@ const Orders = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002/allOrders", {
+      .get("https://tradevault-backend-9ehr.onrender.com/allOrders", {
         withCredentials: true,
       })
       .then((res) => {
