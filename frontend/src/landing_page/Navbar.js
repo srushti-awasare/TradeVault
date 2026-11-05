@@ -57,7 +57,7 @@ function Navbar() {
       localStorage.removeItem("token");
       localStorage.removeItem("username");
 
-      window.location.href = "http://localhost:3000/";
+      window.location.href = "https://tradevault-dashboard-jsch.onrender.com/";
     } catch {
       // Logout failed
     }
