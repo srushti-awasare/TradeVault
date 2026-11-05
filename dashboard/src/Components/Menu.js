@@ -92,7 +92,7 @@ const Menu = () => {
       localStorage.removeItem("username");
       localStorage.removeItem("email");
 
-      window.location.href = "https://tradevault-dashboard-jsch.onrender.com";
+      window.location.href = "https://tradevault-frontend-5knf.onrender.com";
     } catch (error) {
       console.error("Logout failed:", error);
       setIsLoggingOut(false);
