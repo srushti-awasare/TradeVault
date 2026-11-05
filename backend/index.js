@@ -185,7 +185,13 @@ app.get("/api/auth/check", authMiddleware, (req, res) => {
   });
 });
 app.post("/api/auth/logout", (req, res) => {
-  res.clearCookie("token");
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+    path: "/",
+  });
+
   res.json({ success: true });
 });
 // ================= DB CONNECTION =================
